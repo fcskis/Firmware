@@ -104,7 +104,7 @@ public:
 	 */
 	void print_status() override;
 
-	virtual ssize_t read(device::file_t *file_pointer, char *buffer, size_t buflen);
+	ssize_t read(device::file_t *file_pointer, char *buffer, size_t buflen) override;
 
 	/**
 	 * Initialise the automatic measurement state machine and start it.
