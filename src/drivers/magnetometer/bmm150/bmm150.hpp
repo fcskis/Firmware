@@ -53,8 +53,6 @@
 #include <px4_platform_common/i2c_spi_buses.h>
 #include <systemlib/conversions.h>
 
-#include <nuttx/arch.h>
-#include <nuttx/clock.h>
 
 #include <board_config.h>
 #include <drivers/drv_hrt.h>
@@ -65,7 +63,9 @@
 #include <drivers/drv_mag.h>
 #include <mathlib/math/filter/LowPassFilter2p.hpp>
 #include <lib/conversion/rotation.h>
+#include <lib/cdev/CDev.hpp>
 
+using file_t = cdev::file_t;
 
 #define BMM150_SLAVE_ADDRESS                 0x10
 
