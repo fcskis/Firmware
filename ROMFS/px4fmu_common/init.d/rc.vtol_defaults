@@ -33,4 +33,6 @@ then
 	param set RTL_TYPE 1
 
 	param set WV_EN 1
+
+	param set GPS_UBX_DYNMODEL 7
 fi
